@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MangTest</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="account_login">账号登录</string>
+    <string name="in_phone">请输入手机号码</string>
+    <string name="input_number">请输入账号</string>
+    <string name="input_figure_code">请输入图形验证码</string>
+    <string name="input_phone_code">请输入短信验证码</string>
+    <string name="verificationCode">请输入验证码</string>
+    <string name="sendVerificationCode">发送验证码</string>
+    <string name="figure_code">图形验证码:</string>
+    <string name="no_password">忘记密码</string>
+    <string name="setting_password">设置密码</string>
+    <string name="bind_phone">绑定手机号码</string>
+    <string name="login_sms">短信登录</string>
+    <string name="sendCode">发送验证码</string>
+    <string name="sms_code">短信验证码：</string>
+    <string name="phone">手机号码：</string>
+    <string name="new_password">新密码：</string>
+    <string name="verify_password">确认密码：</string>
+    <string name="invite_code">邀请码：</string>
+    <string name="input_new_password">请输入您的新密码</string>
+    <string name="input_new_password2">请再次输入您的新密码</string>
+    <string name="submit">提交</string>
+    <string name="bind">绑定</string>
+    <string name="account">账号：</string>
+</resources>
