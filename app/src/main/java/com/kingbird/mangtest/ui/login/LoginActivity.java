@@ -24,6 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kingbird.mangtest.BindPhoneActivity;
+import com.kingbird.mangtest.HomeActivity;
+import com.kingbird.mangtest.LoginCodeActivity;
 import com.kingbird.mangtest.PasswordActivity;
 import com.kingbird.mangtest.R;
 import com.kingbird.mangtest.ui.login.LoginViewModel;
@@ -140,7 +142,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLogin(View view) {
         KLog.e("登录");
-        Intent intent = new Intent(LoginActivity.this, BindPhoneActivity.class);
+//        Intent intent = new Intent(LoginActivity.this, BindPhoneActivity.class);
+        // 标准
+//        Intent intent = new Intent(LoginActivity.this, LoginCodeActivity.class);
+        // 临时
+        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
         startActivity(intent);
     }
 }

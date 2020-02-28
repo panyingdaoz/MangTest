@@ -4,6 +4,7 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">请输入密码</string>
     <string name="action_sign_in">登录</string>
+    <string name="action_sign_in2">登录/注册</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
@@ -21,6 +22,7 @@
     <string name="setting_password">设置密码</string>
     <string name="bind_phone">绑定手机号码</string>
     <string name="login_sms">短信登录</string>
+    <string name="login_sms_register">短信登录/注册</string>
     <string name="sendCode">发送验证码</string>
     <string name="sms_code">短信验证码：</string>
     <string name="phone">手机号码：</string>
@@ -32,4 +34,19 @@
     <string name="submit">提交</string>
     <string name="bind">绑定</string>
     <string name="account">账号：</string>
+    <string name="userProtocol">登录即表示同意《用户协议》</string>
+    <string name="email">请输入您的邮箱地址</string>
+    <string name="search_content">请输入您感兴趣的内容</string>
+    <string name="enter_name">版权登记</string>
+    <string name="transaction">版权交易</string>
+    <string name="activist">监测维权</string>
+    <string name="park_services">园区服务</string>
+    <string name="Information">为创意打造“护城河”——马栏山知识产权保护开发联盟...</string>
+    <string name="nanniwan">《南泥湾》</string>
+    <string name="item_home">汪峰：搜罗民歌里的记忆</string>
+    <string name="creative">激活创意价值</string>
+    <string name="mango">芒果动听</string>
+    <string name="golden_bee_audio">金蜂音像</string>
+    <string name="directed_by">指导单位</string>
+    <string name="co">合作单位</string>
 </resources>

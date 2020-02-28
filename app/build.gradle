@@ -32,4 +32,9 @@ dependencies {
 
     //日志工具
     implementation 'com.github.zhaokaiqiang.klog:library:1.6.0'
+    // 轮播图控件
+    implementation 'com.youth.banner:banner:1.4.10'
+    // Glide框架
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 }
