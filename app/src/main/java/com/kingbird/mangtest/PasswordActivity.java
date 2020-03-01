@@ -1,11 +1,13 @@
 package com.kingbird.mangtest;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import java.util.Objects;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import static com.kingbird.mangtest.utils.BaseUtils.getCode;
 
@@ -22,6 +24,8 @@ public class PasswordActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //去除标题栏
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_password);
 
         mImageViewCode = findViewById(R.id.imageViewCode);

@@ -1,21 +1,20 @@
 package com.kingbird.mangtest;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
 
 import com.kingbird.mangtest.utils.GlideImageLoader;
 import com.socks.library.KLog;
 import com.youth.banner.Banner;
-import com.youth.banner.BannerConfig;
-import com.youth.banner.Transformer;
 import com.youth.banner.listener.OnBannerListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @ClassName: HomeActivity
@@ -41,6 +40,8 @@ public class HomeActivity extends AppCompatActivity implements OnBannerListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //去除标题栏
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_home);
 
         initView();
@@ -48,7 +49,9 @@ public class HomeActivity extends AppCompatActivity implements OnBannerListener 
         ApplicationInfo appInfo = getApplicationInfo();
 
         for (int i = 0; i < 3; i++) {
-            resId = getResources().getIdentifier("home_48", "drawable", appInfo.packageName);
+//            resId = getResources().getIdentifier("home_48", "drawable", appInfo.packageName);
+            resId = R.mipmap.home_48;
+            KLog.e("文件ID = " + resId);
             creative = "《南泥湾》";
             content = "汪峰：搜罗民谣里的记忆";
             HomeContent creativeData = new HomeContent(creative, resId, content);

@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity"/>
+<!--            android:theme="@android:style/Theme.NoTitleBar"/>-->
         <activity android:name=".LoginCodeActivity" />
         <activity android:name=".BindPhoneActivity" />
         <activity android:name=".SettingPasswordActivity" />
