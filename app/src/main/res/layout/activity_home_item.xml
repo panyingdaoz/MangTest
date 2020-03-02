@@ -6,95 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <include
-        android:id="@+id/homeItem"
-        layout="@layout/home_item" />
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="26dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/homeItem"
-        app:srcCompat="@mipmap/img_home_yuanqu01"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/business"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeItem"
-        app:srcCompat="@mipmap/img_home_yuanqu02"
-        tools:ignore="ContentDescription" />
+        tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/homeItem"
+            app:srcCompat="@mipmap/img_home_yuanqu01"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeItem"
+            app:srcCompat="@mipmap/img_home_yuanqu02"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/busines2s"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView20"
-        app:srcCompat="@mipmap/img_home_yuanqu03"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintTop_toBottomOf="@id/business"
+        tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21"
-        app:srcCompat="@mipmap/img_home_yuanqu04"
-        tools:ignore="ContentDescription" />
 
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20"
+            app:srcCompat="@mipmap/img_home_yuanqu03"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21"
+            app:srcCompat="@mipmap/img_home_yuanqu04"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView22"
-        app:srcCompat="@mipmap/img_home_yuanqu05"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintTop_toBottomOf="@id/busines2s"
+        tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23"
-        app:srcCompat="@mipmap/img01"
-        tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/directed_by"
-        android:textColor="#1F1F1F"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22"
+            app:srcCompat="@mipmap/img_home_yuanqu05"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23"
+            app:srcCompat="@mipmap/img01"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/unit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="25dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26">
@@ -129,9 +154,9 @@
         android:id="@+id/unit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="25dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/unit">
@@ -164,25 +189,13 @@
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/co"
-        android:textColor="#1F1F1F"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unit2" />
-
     <LinearLayout
         android:id="@+id/cooperationUnit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="25dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27">
@@ -217,9 +230,9 @@
         android:id="@+id/cooperationUnit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="25dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cooperationUnit">
@@ -256,9 +269,9 @@
         android:id="@+id/cooperationUnit3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="25dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cooperationUnit2">
@@ -290,5 +303,33 @@
             android:background="#00000000"
             tools:ignore="ContentDescription" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/directed_by"
+        android:textColor="#1F1F1F"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business3" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/co"
+        android:textColor="#1F1F1F"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unit2" />
+
+    <include
+        android:id="@+id/homeItem"
+        layout="@layout/home_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

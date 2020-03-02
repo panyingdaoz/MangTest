@@ -1,17 +1,8 @@
 package com.kingbird.mangtest.ui.login;
 
 import android.app.Activity;
-
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
@@ -23,14 +14,21 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.kingbird.mangtest.BindPhoneActivity;
+import com.kingbird.mangtest.CopyrightTransactionActivity;
 import com.kingbird.mangtest.HomeActivity;
-import com.kingbird.mangtest.LoginCodeActivity;
+import com.kingbird.mangtest.HomeSearchGistoryActivity;
 import com.kingbird.mangtest.PasswordActivity;
 import com.kingbird.mangtest.R;
-import com.kingbird.mangtest.ui.login.LoginViewModel;
-import com.kingbird.mangtest.ui.login.LoginViewModelFactory;
+import com.kingbird.mangtest.SearchResultActivity;
 import com.socks.library.KLog;
+
+import java.util.Objects;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -39,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_login);
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
@@ -147,6 +146,14 @@ public class LoginActivity extends AppCompatActivity {
 //        Intent intent = new Intent(LoginActivity.this, LoginCodeActivity.class);
         // 临时
         Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void onCeShiUi(View view) {
+//        Intent intent = new Intent(LoginActivity.this, HomeSearchGistoryActivity.class);
+        Intent intent = new Intent(LoginActivity.this, CopyrightTransactionActivity.class);
+//        Intent intent = new Intent(LoginActivity.this, SearchResultActivity.class);
+//        Intent intent = new Intent(LoginActivity.this, HomeSearchGistoryActivity.class);
         startActivity(intent);
     }
 }

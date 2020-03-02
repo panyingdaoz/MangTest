@@ -49,4 +49,18 @@
     <string name="golden_bee_audio">金蜂音像</string>
     <string name="directed_by">指导单位</string>
     <string name="co">合作单位</string>
+    <string name="interest">请输入你感兴趣的内容</string>
+    <string name="cancel">取消</string>
+    <string name="search_gistory">搜索记录</string>
+    <string name="copyright_registration">版权登记</string>
+    <string name="copyright_transaction">版权交易</string>
+    <string name="recommend">推荐</string>
+    <string name="audio">金蜂音像</string>
+    <string name="mangguo">芒果动听</string>
+    <string name="comic">黑马漫画</string>
+    <string name="video_zone">视频专区</string>
+    <string name="audio_zone">音频专区</string>
+    <string name="anime_zone">动漫专区</string>
+    <string name="material_zone">素材专区</string>
+
 </resources>
